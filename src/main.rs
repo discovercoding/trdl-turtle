@@ -169,12 +169,6 @@ fn main() {
     let mut drawing = trdl::Drawing::new(&window, window_size.0, window_size.1,
                                          0.4, 0.5, 0.6).unwrap();
 
-    let mut idx = 0usize;
-    let sqrt_size = 1u32;
-    let num_shapes = sqrt_size * sqrt_size;
-    let wx = window_size.0 as i32 - 300i32;
-    let wy = window_size.1 as i32 - 300i32;
-
     let paths = make_shape(600f32, 400f32);
     for p in paths {
         drawing.add_path(p).unwrap();
