@@ -2,6 +2,9 @@
 # will have compiled files and executables
 /target/
 
-# Remove Cargo.lock from gitignore if creating an executable, leave it for libraries
-# More information here http://doc.crates.io/guide.html#cargotoml-vs-cargolock
-Cargo.lock
+/shaders/
+/shaders/vertex_shader.glsl
+/shaders/tess_control_shader.glsl
+/shaders/tess_evaluation_shader.glsl
+/shaders/geometry_shader.glsl
+/shaders/fragment_shader.glsl
